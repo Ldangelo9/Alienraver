@@ -1,0 +1,299 @@
+*{
+   margin: 0px;
+   padding:0px;
+   box-sizing: border-box;
+   
+}
+@media(min-width: 300px) and (max-width: 768px){
+   .container-fluid{
+      width: 100%;
+      height:auto;
+      box-sizing: border-box;
+      padding:5px;
+      margin:5px;
+   }
+   header{
+      margin-right: 0;
+      height: 100px;
+   }
+   nav{
+      margin-right: 0;
+      height: auto;
+   }
+   .f1{
+      margin-right: 0;
+      height: auto;
+      
+   }
+   section{
+      margin-right:0;
+      height: auto;
+   }
+   .row{
+      margin-right: 0;
+      height: auto;
+   }
+   footer{
+      margin-right: 0;
+        height: auto;
+   }
+}
+
+ 
+@font-face{
+   font-family: Seagram;
+   src: url(../fonts/Seagram\ tfb.ttf);
+   font-weight: bold;
+   font-style:normal;
+   
+}
+@font-face{
+   font-family: Goldman;
+   src: url(../fonts/Goldman-Bold.ttf);
+   font-weight: bold;
+}
+
+header{
+   width: 1200px;
+   height:100px;
+   margin:5px;
+   
+}
+.logo1{
+   width: 400px;
+   height: 100px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-top:5px;
+}   
+.logo2{
+   
+   width: 100px;
+   height: 100px;
+   margin-left: 80px;
+   margin-right:5px;
+   margin-top:5px;
+   border-radius: 20px;
+
+   
+   
+   
+}
+body {
+   background-size:contain;
+   background-image:linear-gradient(to top, #bdbdc1, black);
+}
+nav{
+   color:#93ff33;
+   font-size: 25px;
+   font-weight: bold;
+   margin:5px;
+   padding:5px;
+
+  
+   
+   /*navegador*/
+}
+nav ul{
+   list-style-type: none;
+   text-align: center;
+   font-size: 0px;
+   z-index:1000;
+}
+nav li{
+   display: inline-block;
+   width:20%;
+   position:relative;
+   border:solid 1px #c533ffd0;
+   background-color: #4017a7;
+   font-size:20px;
+   border-radius:15px
+}
+
+nav ul li ul{
+   position: absolute;
+   display: none;
+   width:100%;
+}
+nav ul ul li{
+   display:block;
+   width: 100%;
+}
+nav a{
+   text-decoration: none;
+   color: white;
+}
+nav ul li:hover ul{
+   display: block;
+
+}
+
+nav li:hover{
+   background-color: #4b22f0;
+}
+
+
+h1{
+   color: white;
+   font-family: Seagram;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 10px;
+   font-size: 50px;
+   
+}
+   
+h2{
+   color:white;
+   font-weight:bold;
+   margin-left:50px;
+   padding: 3px;
+
+}
+h3{
+   color:white;
+   font-size: 15px;
+   background-color: #4017a7;
+   width: 300px;
+   border: solid 1px #93ff33;
+   border-radius:15px;
+   padding:5px;
+   text-align:center;
+  
+   
+}
+.f1{
+   height:auto;
+   margin-left:5px;
+   margin-right:5px;
+   margin-bottom: 5px;
+   margin-top: 5px;
+  
+  
+  
+/* galeria de fotos index*/
+
+   
+}
+
+.s1{
+   height: 300px;
+   width: 400px;
+   border-radius: 20px;
+   margin:5px;
+   padding:5px;
+  
+}
+.s1:hover{
+   transform: rotate( -20deg);
+   /*movimiento de rotacion*/
+}
+.row{
+   margin:5px;
+   padding:5px;
+   
+}
+.fotodiv{
+   height:100%;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas: 
+   "div div div";
+   justify-content: flex-start;
+   
+   
+  /*galeria de fotos 1 */
+}
+
+
+
+.ph1{
+   height: 300px;
+   width: 200px;
+   padding: 10px;
+   margin:5px;
+}
+.ph1:hover{
+   transform: scale(1.5,1.5);
+   padding:5px;
+   /*zoom de imagenes*/
+
+
+}
+.f6{
+   width:25%;
+   align-items: center;
+   display:flex;
+   flex-direction: column;
+}
+.formulario{
+   color:yellow;
+}
+.form-check{
+   display:flex;
+   flex-direction: column;
+   align-items: left;
+}
+table{
+   font-family:Seagram;
+   font-weight: bold;
+   color:white;
+   border-color: #4017a7;
+   border-style: solid;
+   border-width: 10px;
+   
+}
+
+.sect {
+   width:100%;
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display:flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+p{
+   color:white;
+   font-weight:bold;
+   font-size:15px;
+
+}
+.data1{
+   color: white;
+   font-weight: bold;
+   margin-top:5px;
+   width:1000px;
+   background-color:#4017a7;
+   border: solid 2px #93ff33;
+   border-radius:15px;
+}
+
+footer{
+   font-size: 15px;
+   font-weight: bold;
+}
+.env{
+   display:flex;
+   justify-content:flex-start;
+   align-items:flex-end;
+   font-size:20px;
+   font-weight:bold;
+
+}
+.pie{
+   display: flex;
+   justify-content: center;
+   align-items:flex-start;
+   
+   
+}
+.p1{
+   width: 50px;
+   height: 50px;
+   
+}
+.p1:hover{
+   transform:skew(10deg)
+}
